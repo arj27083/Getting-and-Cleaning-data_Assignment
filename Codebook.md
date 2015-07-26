@@ -25,7 +25,7 @@ read_data() - reads either test or train data based on the input
 
 Extracted Feature Fields:
 
-The following features were extracted as a part of mean() and std(). meanFreq and angle(mean) were omitted as they don't represent required mean.
+The following features were extracted as a part of mean() and std() suing grepl() function. meanFreq and angle(mean) were omitted as they don't represent required mean.
 
 tBodyAcc-mean()-X (column 1)
 tBodyAcc-mean()-Y (column 2)
