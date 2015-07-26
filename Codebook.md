@@ -1,7 +1,7 @@
-Code Book
-ID Fields
+##Code Book
+##ID Fields
 
-Variables:
+##Variables:
 
 subj - The partcipant ID
 
@@ -19,11 +19,11 @@ all_dat_melted - melted data using and subject and activity field
 
 all_dat_dcast - dcasted data which is the cleaned one
 
-Functions:
+##Functions:
 
 read_data() - reads either test or train data based on the input
 
-Extracted Feature Fields:
+##Extracted Feature Fields:
 
 The following features were extracted as a part of mean() and std() suing grepl() function. meanFreq and angle(mean) were omitted as they don't represent required mean.
 
@@ -94,7 +94,7 @@ fBodyBodyGyroMag-std() (column 530)
 fBodyBodyGyroJerkMag-mean() (column 542)
 fBodyBodyGyroJerkMag-std() (column 543)
 
-Activity Labels extracted
+##Activity Labels extracted
 
 1 - WALKING
 
