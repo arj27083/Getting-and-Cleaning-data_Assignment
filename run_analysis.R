@@ -1,5 +1,7 @@
 download.file("https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip", "data.zip")
 unzip("data.zip")
+
+##A separate function to read both test and train data based on separate call
 read_data<- function(dataset_in)
 {
   dd<- read.table("./UCI HAR Dataset/features.txt")
