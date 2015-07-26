@@ -3,6 +3,7 @@ ID Fields
 
 Variables:
 subj - The partcipant ID
+
 act - The label of the activity performed when the corresponding measurements were taken
 dat - datasets of extracted features (training or test)
 
