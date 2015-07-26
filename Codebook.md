@@ -15,7 +15,7 @@ all_dat_dcast - dcasted data which is the cleaned one
 Functions:
 read_data() - reads either test or train data based on the input
 
-Extracted Feature Fields
+Extracted Feature Fields:
 The following features were extracted as a part of mean() and std(). meanFreq and angle(mean) were omitted as they don't represent required mean.
 
 tBodyAcc-mean()-X (column 1)
