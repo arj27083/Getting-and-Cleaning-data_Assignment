@@ -2,21 +2,29 @@ Code Book
 ID Fields
 
 Variables:
+
 subj - The partcipant ID
 
 act - The label of the activity performed when the corresponding measurements were taken
+
 dat - datasets of extracted features (training or test)
 
 test_dat - Test data extracted
+
 train_dat - Train data extracted
+
 all_dat - combined data (test and train)
+
 all_dat_melted - melted data using and subject and activity field
+
 all_dat_dcast - dcasted data which is the cleaned one
 
 Functions:
+
 read_data() - reads either test or train data based on the input
 
 Extracted Feature Fields:
+
 The following features were extracted as a part of mean() and std(). meanFreq and angle(mean) were omitted as they don't represent required mean.
 
 tBodyAcc-mean()-X (column 1)
@@ -89,10 +97,15 @@ fBodyBodyGyroJerkMag-std() (column 543)
 Activity Labels extracted
 
 1 - WALKING
+
 2 - WALKING_UPSTAIRS
+
 3 - WALKING_DOWNSTAIRS
+
 4 - SITTING
+
 5 - STANDING
+
 6 - LAYING
 
 Activity labels are factored into the variables from the original data based on the numbers it represented
