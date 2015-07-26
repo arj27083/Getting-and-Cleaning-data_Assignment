@@ -3,20 +3,11 @@ unzip("data.zip")
 read_data<- function(dataset_in)
 {
   dd<- read.table("./UCI HAR Dataset/features.txt")
-  k<-1
-  
+
   ## Extracting feature names and numbers along with that of activity
-  feature.no<- integer()
-  for(i in 1:nrow(dd))
-  {
-    x<- grepl("std()|mean()", as.character(dd$V2[i]))
-    z<- grepl("meanFreq()", as.character(dd$V2[i]))
-    if(x== TRUE && z== FALSE)
-    {
-      feature.no[k]<- i
-      k<- k+1
-    }
-  }
+  x<- grepl("std()|mean()", as.character(dd$V2))
+  z<- grepl("meanFreq()", as.character(dd$V2))
+  feature.no<- dd$V1[x&!z]
   feature.names<- as.character(dd[feature.no,2])
   activity.names<- as.character(read.table("./UCI HAR Dataset/activity_labels.txt")[,2])
   activity.no<- as.integer(read.table("./UCI HAR Dataset/activity_labels.txt")[,1])
