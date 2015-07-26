@@ -33,7 +33,7 @@ read_data<- function(dataset_in)
   names(act)<- "activity"
   act$activity <- factor(act$activity, levels = activity.no, labels = activity.names)
   
-  ##Storing clean data
+  ##Storing combined data
   return (clean.data<- cbind(subj, act, dat))
 }
 
