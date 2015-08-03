@@ -53,5 +53,5 @@ all_dat_melted <- melt(all_dat, id = c("activity","subject"))
 all_dat_dcast <- dcast(all_dat_melted, activity + subject ~ variable, mean)
 
 ## Storing a txt and csv of cleaned file
-write.csv(all_dat_dcast, "cleaned_data.csv", row.names = FALSE)
-write.table(all_dat_dcast, "cleaned_data.txt", row.names = FALSE)
+write.csv(all_dat_dcast, "Tidy_data.csv", row.names = FALSE)
+write.table(all_dat_dcast, "Tidy_data.txt", row.names = FALSE)
