@@ -17,7 +17,7 @@ all_dat - combined data (test and train)
 
 all_dat_melted - melted data using and subject and activity field
 
-all_dat_dcast - dcasted data which is the cleaned one
+all_dat_dcast - dcasted data which is the cleaned and final one
 
 ##Functions:
 
