@@ -1,5 +1,5 @@
 # Getting-and-Cleaning-data_Assignment
-This is a part of evaluation on Coursera
+This is a part of evaluation of Coursera Project
 
 The script in run_analysis.R does the following:
 
