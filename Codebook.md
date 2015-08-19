@@ -108,4 +108,4 @@ fBodyBodyGyroJerkMag-std() (column 543)
 
 6 - LAYING
 
-Activity labels are factored into the variables from the original data based on the numbers it represented
+Activity labels are factored into the variables from the original data based on the numbers it represented.
